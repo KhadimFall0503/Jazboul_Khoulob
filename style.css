@@ -22,7 +22,8 @@ body {
   }
   
 .mo{
-    width: 450px;
+    width: 250px;
+    height: 385px;
 }
 .f{
     width: 100%;
@@ -130,7 +131,7 @@ body {
   
   .texte-sur-image h1 {
     font-size: 1.8rem; /* Taille du titre */
-    font-weight: bold;
+    font-weight: 800;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ajoute une ombre pour une meilleure lisibilité */
   }
@@ -146,9 +147,8 @@ body {
   }
   
   .propos h3 {
-    font-size: 32px;
-    color: #155724; /* Couleur verte élégante */
-    text-transform: uppercase;
+    font-size: 40px;
+    color: #28a745;
     margin-bottom: 30px;
   }
   
@@ -164,15 +164,37 @@ body {
   }
   
   .propos p {
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     line-height: 1.8; /* Lisibilité améliorée */
     text-align: justify;
     padding: 20px;
-    border-left: 4px solid #28a745; /* Barre décorative à gauche */
-    background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond légère */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
   }
+
+  .custom-hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .custom-hr::before, .custom-hr::after {
+    content: "";
+    flex: none; /* Désactive la flexibilité pour contrôler la largeur */
+    width: 250px; /* Longueur réduite des traits */
+    height: 2px; /* Épaisseur des traits */
+    background-color: orange; /* Couleur des traits */
+    margin: 0 10px; /* Espacement autour de l'étoile */
+  }
+  
+  .star {
+    font-size: 30px; /* Taille de l'étoile */
+    color: #155724; /* Couleur de l'étoile */
+  }
+  
+      
+  
   
   .row {
     display: flex;
@@ -189,7 +211,7 @@ body {
   
   .programmes h3 {
     font-size: 32px;
-    color: #155724; /* Couleur verte harmonisée */
+    color: #28a745;
     margin-bottom: 20px;
   }
   .programmes{
@@ -235,7 +257,7 @@ body {
   
   .equipe h3 {
     font-size: 32px;
-    color: #155724; /* Couleur harmonisée */
+    color: #28a745;
     margin-bottom: 20px;
   }
   
@@ -275,7 +297,7 @@ body {
   
   .evenement h3 {
     font-size: 32px;
-    color: #155724; /* Couleur harmonisée */
+    color: #28a745;
     margin-bottom: 20px;
   }
   
@@ -312,6 +334,43 @@ body {
     color: #333;
     line-height: 1.6; /* Texte lisible */
   }
+  .pédagogie {
+    background-color: #f8f9fa; /* Fond doux et clair */
+    padding: 50px 20px;
+    border-radius: 10px;
+  }
+  
+  .pédagogie h3 {
+    font-size: 36px;
+    color: #28a745; /* Vert harmonieux */
+    margin-bottom: 20px;
+  }
+  
+  .pédagogie img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blockquote {
+    font-style: italic;
+    color: #555;
+    line-height: 1.8;
+    margin: 20px 0;
+  }
+  
+  .blockquote p {
+    margin: 10px 0;
+    text-align: justify; /* Rend le texte plus propre et structuré */
+  }
+  
+  .pédagogie p.text-end {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
   .galerie {
     background-color: #f8f9fa; /* Fond doux */
     padding: 50px 20px;
@@ -319,7 +378,7 @@ body {
   
   .galerie h3 {
     font-size: 32px;
-    color: #155724; /* Couleur harmonisée */
+    color: #28a745;
     margin-bottom: 20px;
   }
   
@@ -342,7 +401,7 @@ body {
   
   .contact h3 {
     font-size: 32px;
-    color: #155724; /* Harmonisé avec votre charte graphique */
+    color: #28a745;
     margin-bottom: 20px;
   }
   
