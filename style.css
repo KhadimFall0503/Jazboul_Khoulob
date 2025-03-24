@@ -1,0 +1,403 @@
+body {
+    background: linear-gradient(45deg, #e9f7ef, #ffffff); /* Dégradé léger avec un ton clair */
+    color: #333; /* Couleur du texte sombre pour un bon contraste */
+    font-family: Arial, sans-serif; /* Police sobre et lisible */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    height: 60px; /* Ajustez la hauteur selon vos besoins */
+    transition: transform 0.3s, opacity 0.3s; /* Animation fluide */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center; /* Centre le logo verticalement */
+  }
+  
+  .navbar-brand:hover .logo {
+    transform: scale(1.1); /* Zoom léger au survol */
+    opacity: 0.9; /* Légère transparence au survol */
+  }
+  
+.mo{
+    width: 450px;
+}
+.f{
+    width: 100%;
+    height: 800px;
+}
+/* Styles de base */
+.navbar {
+    background: linear-gradient(45deg, #28a745, #155724); /* Effet de dégradé */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  .navbar-brand img {
+    height: 50px; /* Ajustez selon votre logo */
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s; /* Animation douce */
+  }
+  
+  .nav-link:hover {
+    color: #28a745 !important;
+    background-color: #fff; /* Constraste pour effet au survol */
+    border-radius: 5px; /* Coins arrondis pour le survol */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Icône personnalisée si souhaité */
+    background-size: cover;
+  }
+  
+  .btn.ev {
+    background-color: #155724; /* Bouton harmonisé avec la navbar */
+    font-weight: bold;
+    border: 1px solid #28a745;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Bordure blanche semi-transparente */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,%20255,%20255,%200.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Icône blanche */
+    background-size: contain;
+  }
+  .reseaux-sociaux {
+    display: flex;
+    align-items: center;
+  }
+  
+  .reseaux-sociaux a {
+    color: #fff; /* Couleur blanche pour les icônes */
+    font-size: 24px; /* Taille des icônes */
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .reseaux-sociaux a:hover {
+    color: #28a745; /* Couleur verte harmonisée au survol */
+    transform: scale(1.2); /* Zoom au survol */
+  }
+  
+  
+  
+  .btn.ev:hover {
+    background-color: #28a745;
+    transform: scale(1.1); /* Légère mise en valeur au survol */
+    border-color: #155724;
+  }
+  
+.masque-image {
+    position: relative;
+  }
+  
+  .masque-image img {
+    display: block;
+    width: 100%;
+  }
+  
+  .masque-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Modifiez la couleur et la transparence selon vos besoins */
+    z-index: 1;
+  }
+  
+  .masque-image img {
+    position: relative;
+    z-index: 0;
+  }
+  .texte-sur-image {
+    position: absolute;
+    top: 50%; /* Ajustez pour la position verticale */
+    left: 50%; /* Ajustez pour la position horizontale */
+    transform: translate(-50%, -50%);
+    color: #fff; /* Couleur du texte */
+    text-align: center;
+    z-index: 2; /* Place le texte au-dessus de l'image */
+  }
+  
+  .texte-sur-image h1 {
+    font-size: 1.8rem; /* Taille du titre */
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ajoute une ombre pour une meilleure lisibilité */
+  }
+  
+  .texte-sur-image p {
+    font-size: 16px; /* Taille du paragraphe */
+    margin: 10px 0 0; /* Espace entre le titre et le paragraphe */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre pour le paragraphe */
+  }  
+  .propos {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Dégradé doux pour le fond */
+    padding: 60px 20px; /* Espacement généreux pour une présentation agréable */
+  }
+  
+  .propos h3 {
+    font-size: 32px;
+    color: #155724; /* Couleur verte élégante */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .propos .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centrage du contenu */
+  }
+  
+  .propos img {
+    width: 100%;
+    border-radius: 10px; /* Coins arrondis pour un rendu moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effet d'ombre sur l'image */
+  }
+  
+  .propos p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8; /* Lisibilité améliorée */
+    text-align: justify;
+    padding: 20px;
+    border-left: 4px solid #28a745; /* Barre décorative à gauche */
+    background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond légère */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  }
+  
+  .row {
+    display: flex;
+    align-items: center; /* Centrer verticalement les colonnes */
+  }
+  
+  .col-md-6 {
+    padding: 20px;
+  }
+  .programmes {
+    background-color: #f8f9fa; /* Fond doux */
+    padding: 50px 20px;
+  }
+  
+  .programmes h3 {
+    font-size: 32px;
+    color: #155724; /* Couleur verte harmonisée */
+    margin-bottom: 20px;
+  }
+  
+  .programme-card {
+    background-color: #ffffff; /* Fond blanc pour chaque programme */
+    border: 1px solid #ddd; /* Bordure légère */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre doux */
+    border-radius: 10px; /* Coins arrondis pour un design moderne */
+  }
+  
+  .programme-card h4 {
+    font-size: 24px;
+    color: #155724; /* Accent vert */
+    margin-bottom: 10px;
+  }
+  
+  .programme-card p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  .equipe {
+    background-color: #f8f9fa; /* Fond doux */
+    padding: 50px 20px;
+  }
+  
+  .equipe h3 {
+    font-size: 32px;
+    color: #155724; /* Couleur harmonisée */
+    margin-bottom: 20px;
+  }
+  
+  .equipe-card {
+    background-color: #ffffff; /* Fond blanc */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Coins arrondis */
+  }
+  
+  .equipe-card img {
+    width: 150px; /* Ajustez la taille des images */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Images en cercle */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  }
+  
+  .equipe-card h4 {
+    font-size: 24px;
+    color: #155724; /* Accent vert */
+    margin-bottom: 10px;
+  }
+  
+  .equipe-card p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  .evenement {
+    background-color: #f8f9fa; /* Couleur douce pour le fond */
+    padding: 50px 20px;
+  }
+  
+  .evenement h3 {
+    font-size: 32px;
+    color: #155724; /* Couleur harmonisée */
+    margin-bottom: 20px;
+  }
+  
+  .event-card {
+    background-color: #ffffff; /* Fond blanc des cartes */
+    border: 1px solid #ddd; /* Bordure légère */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 200px; /* Taille uniforme pour les images */
+    object-fit: cover;
+    border-radius: 10px; /* Coins arrondis pour les images */
+    margin-bottom: 15px;
+  }
+  
+  .event-card h4 {
+    font-size: 20px;
+    color: #155724; /* Texte accent vert */
+    margin-bottom: 10px;
+  }
+  
+  .event-card p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6; /* Texte lisible */
+  }
+  .galerie {
+    background-color: #f8f9fa; /* Fond doux */
+    padding: 50px 20px;
+  }
+  
+  .galerie h3 {
+    font-size: 32px;
+    color: #155724; /* Couleur harmonisée */
+    margin-bottom: 20px;
+  }
+  
+  .galerie img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Ajuste les dimensions des images */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s;
+  }
+  
+  .galerie img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+  }
+  .contact {
+    background-color: #f8f9fa; /* Fond doux */
+    padding: 50px 20px;
+  }
+  
+  .contact h3 {
+    font-size: 32px;
+    color: #155724; /* Harmonisé avec votre charte graphique */
+    margin-bottom: 20px;
+  }
+  
+  .contact h4 {
+    font-size: 24px;
+    color: #155724;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .map-responsive {
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%; /* Ratio 16:9 */
+  }
+  
+  .map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Coins arrondis pour un style moderne */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  }
+  .footer {
+    background: linear-gradient(45deg, #28a745, #155724); /* Dégradé élégant */
+    padding: 30px 0;
+    color: #fff; /* Texte blanc pour contraste */
+  }
+  
+  .footer h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff; /* Texte harmonisé */
+  }
+  
+  .footer a {
+    color: #fff; /* Liens blancs */
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #ccc; /* Couleur grise au survol */
+  }
+  
+  .footer hr {
+    border-color: rgba(255, 255, 255, 0.3); /* Ligne de séparation subtile */
+  }
+  
+  .footer i {
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .footer i:hover {
+    transform: scale(1.2); /* Zoom au survol */
+    color: #28a745; /* Effet vert au survol */
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  
+  .footer i:hover {
+    transform: scale(1.2); /* Zoom léger sur les icônes */
+  }
+              
