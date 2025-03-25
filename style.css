@@ -26,9 +26,11 @@ body {
   }
   
   .logo {
-    height: 60px; /* Ajustez la hauteur selon vos besoins */
-    transition: transform 0.3s, opacity 0.3s; /* Animation fluide */
-  }
+    height: 80px; /* Augmentez la hauteur, par exemple, à 80px */
+    width: auto; /* Assure que la largeur s'adapte automatiquement */
+    transition: transform 0.3s, opacity 0.3s; /* Animation fluide pour les effets */
+}
+
   
   .navbar-brand {
     display: flex;
