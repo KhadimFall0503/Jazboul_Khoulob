@@ -1,3 +1,21 @@
+/* Importer des polices */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* Titre */
+.propos h3 {
+    font-family: 'Playfair Display', serif; /* Police élégante pour le titre */
+    font-size: 2.5rem;
+    color: #2d3436; /* Couleur sombre et professionnelle */
+}
+
+/* Texte */
+.propos p {
+    font-family: 'Roboto', sans-serif; /* Police moderne et lisible */
+    font-size: 1.2rem;
+    line-height: 1.8; /* Espacement entre les lignes pour une meilleure lisibilité */
+    color: #636e72; /* Couleur grise douce */
+}
+
 body {
     background: linear-gradient(45deg, #e9f7ef, #ffffff); /* Dégradé léger avec un ton clair */
     color: #333; /* Couleur du texte sombre pour un bon contraste */
