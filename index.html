@@ -18,16 +18,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex justify-content-center mx-auto">
-                <li class="nav-item"><a href="#acceuil" class="nav-link text-white fw">Acceuil</a></li>
-                <li class="nav-item"><a href="#propos" class="nav-link text-white fw">Daara ji</a></li>
-                <li class="nav-item"><a href="#programmes" class="nav-link text-white fw">Programmes</a></li>
-                <li class="nav-item"><a href="#equipe" class="nav-link text-white fw">Commission</a></li>
-                <li class="nav-item"><a href="#evenement" class="nav-link text-white fw">Evenements</a></li>
-                <li class="nav-item"><a href="#pedagogie" class="nav-link text-white fw">Pédagogie</a></li>
-                <li class="nav-item"><a href="#galerie" class="nav-link text-white fw">Galerie</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link text-white fw">Contact</a></li>
-              </ul>
+          <ul class="navbar-nav d-flex justify-content-center mx-auto">
+            <li class="nav-item"><a href="#acceuil" class="nav-link text-white fw">Acceuil</a></li>
+            <li class="nav-item dropdown">
+                <a href="#propos" class="nav-link text-white fw dropdown-toggle" id="daaraDropdown" data-bs-toggle="dropdown" aria-expanded="false">Daara ji</a>
+                <ul class="dropdown-menu" aria-labelledby="daaraDropdown">
+                    <li><a href="#evenement" class="dropdown-item">Nos événements</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#programmes" class="nav-link text-white fw">Programmes</a></li>
+            <li class="nav-item"><a href="#equipe" class="nav-link text-white fw">Commission</a></li>
+            <li class="nav-item"><a href="#pedagogie" class="nav-link text-white fw">Pédagogie</a></li>
+            <li class="nav-item"><a href="#galerie" class="nav-link text-white fw">Galerie</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link text-white fw">Contact</a></li>
+        </ul>
+        
               
               <div class="reseaux-sociaux">
                 <a href="https://www.facebook.com/share/1Yce9371Dq/?mibextid=wwXIfr" target="_blank" class="text-white me-3">
@@ -37,7 +42,7 @@
                   <i class="fab fa-instagram fa-lg"></i>
                 </a>
                 
-                <a href="https://tiktok.com" target="_blank" class="text-white me-3">
+                <a href="https://www.tiktok.com/@daara_jazboul_xoulob?_t=ZM-8uxVibil67K&_r=1" target="_blank" class="text-white me-3">
                   <i class="fab fa-tiktok fa-lg"></i>
                 </a>
                 <a href="https://t.me/djkhtp" target="_blank" class="text-white">
@@ -57,26 +62,39 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="masque-image">
-                      <img src="images/daara.jpg" class="d-block f" alt="...">
-                      <div class="texte-sur-image">
-                        <h1 data-aos="fade-right">DALAL AK JAMM CI DAARA JAZBOUL KHOULOB</h1>
-                        <p>Daara Jazboul Khoulob est un Daara mouride, dédié à la formation religieuse et spirituelle selon les enseignements et les valeurs de la confrérie mouride.</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  
-              <div class="carousel-item">
-                <div class="masque-image">
-                    <img src="images/kourel.jpg" class="d-block f" alt="...">
+              <div class="carousel-item active">
+                <div class="masque-image position-relative">
+                    <img src="images/daara.jpg" class="d-block f" alt="...">
                     <div class="texte-sur-image">
-                        <h1 data-aos="fade-right">MINAL KHADIMI ILAL KHADIMI !</h1>
-                        <p>Serigne Mountakha Mbacké Khalif Général des Mourides Yalla Nafi Yagg té Andak Wéer.</p>
-                      </div>
+                        <h1 data-aos="fade-right">Dàal jàaam dji Jazboul Khoulob</h1>
+                        <p>Daara Jazboul Khoulob est un Daara mouride, dédié à la formation religieuse et spirituelle selon les enseignements et les valeurs de la confrérie mouride.</p>
+                    </div>
+                    <!-- Icône WhatsApp -->
+                    <a href="https://wa.me/221773457934" target="_blank" class="whatsapp-icon">
+                      <i class="fab fa-whatsapp"></i>
+                  </a>
+                  
+                </div>
+            </div>
+            
+                  
+                  
+            <div class="carousel-item">
+              <div class="masque-image position-relative">
+                  <img src="images/kourel.jpg" class="d-block f" alt="...">
+                  <div class="texte-sur-image">
+                      <h1 data-aos="fade-right">MINAL KHADIMI ILAL KHADIMI !</h1>
+                      <p>Serigne Mountakha Mbacké Khalif Général des Mourides Yalla Nafi Yagg té Andak Wéer.</p>
+                  </div>
+                  <!-- Icône WhatsApp -->
+                  <a href="https://wa.me/221773457934" target="_blank" class="whatsapp-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+                  </a>
               </div>
+          </div>
+          
               
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -129,6 +147,7 @@
             </div>
           </div>
         </div>
+        
       </section>
       <section class="equipe pt-5" id="equipe">
         <div class="container">
@@ -188,54 +207,56 @@
       </section>
       <section class="evenement pt-5" id="evenement">
         <div class="container">
-          <h3 class="text-center df fw-bold">Nos événements</h3>
-          <hr>
-          <div class="row pt-5">
-            <!-- Dahira -->
-            <div class="col-md-4">
-              <div class="event-card text-center">
-                <img src="images/daara.jpg" alt="Dahira" class="img-fluid rounded">
-                <h4>Dahira Chaque Dimanche</h4>
-                <p>Rencontres hebdomadaires pour renforcer la foi, partager des enseignements et cultiver l'esprit de fraternité.</p>
-              </div>
+            <h3 class="text-center df fw-bold">Nos événements</h3>
+            <hr>
+            <div class="row pt-5">
+                <!-- Dahira -->
+                <div class="col-md-4">
+                    <div class="event-card text-center">
+                        <img src="images/daara.jpg" alt="Dahira" class="img-fluid rounded">
+                        <h4>Dahira Chaque Dimanche</h4>
+                        <p>Rencontres hebdomadaires pour renforcer la foi, partager des enseignements et cultiver l'esprit de fraternité.</p>
+                    </div>
+                </div>
+                <!-- Vivification Ramadan -->
+                <div class="col-md-4">
+                    <div class="event-card text-center">
+                        <img src="images/kalif.jpg" alt="Vivification Ramadan" class="img-fluid rounded">
+                        <h4>Vivification Pendant le Ramadan</h4>
+                        <p>Activités spirituelles intenses pour vivre pleinement la bénédiction du mois sacré de Ramadan.</p>
+                    </div>
+                </div>
+                <!-- Magal Serigne Abdou Khadre -->
+                <div class="col-md-4">
+                    <div class="event-card text-center">
+                        <img src="images/abdou.jpg" alt="Magal Serigne Abdou Khadre" class="img-fluid rounded">
+                        <h4>Magal Serigne Abdou Khadre</h4>
+                        <p>Célébration en hommage à la vie et à l'héritage de Serigne Abdou Khadre, guide inspirant du mouridisme.</p>
+                    </div>
+                </div>
+                <!-- Magal de Touba -->
+                <div class="col-md-4">
+                    <div class="event-card text-center">
+                        <img src="images/touba.jpg" alt="Magal Touba" class="img-fluid rounded">
+                        <h4>Magal de Touba</h4>
+                        <p>Événement phare célébrant le départ en exil de Cheikh Ahmadou Bamba, une occasion de communion spirituelle mondiale.</p>
+                    </div>
+                </div>
+                <!-- Gamou -->
+                <div class="col-md-4">
+                    <div class="event-card text-center">
+                        <img src="images/gamou.jpg" alt="Gamou" class="img-fluid rounded">
+                        <h4>Gamou</h4>
+                        <p>Célébration du Mawlid, marquant la naissance du Prophète (PSL), avec des récitations et des prières.</p>
+                    </div>
+                </div>
             </div>
-            <!-- Vivification Ramadan -->
-            <div class="col-md-4">
-              <div class="event-card text-center">
-                <img src="images/kalif.jpg" alt="Vivification Ramadan" class="img-fluid rounded">
-                <h4>Vivification Pendant le Ramadan</h4>
-                <p>Activités spirituelles intenses pour vivre pleinement la bénédiction du mois sacré de Ramadan.</p>
-              </div>
-            </div>
-            <!-- Magal Serigne Abdou Khadre -->
-            <div class="col-md-4">
-              <div class="event-card text-center">
-                <img src="images/abdou.jpg" alt="Magal Serigne Abdou Khadre" class="img-fluid rounded">
-                <h4>Magal Serigne Abdou Khadre</h4>
-                <p>Célébration en hommage à la vie et à l'héritage de Serigne Abdou Khadre, guide inspirant du mouridisme.</p>
-              </div>
-            </div>
-            <!-- Magal de Touba -->
-            <div class="col-md-4">
-              <div class="event-card text-center">
-                <img src="images/touba.jpg" alt="Magal Touba" class="img-fluid rounded">
-                <h4>Magal de Touba</h4>
-                <p>Événement phare célébrant le départ en exil de Cheikh Ahmadou Bamba, une occasion de communion spirituelle mondiale.</p>
-              </div>
-            </div>
-            <!-- Gamou -->
-            <div class="col-md-4">
-              <div class="event-card text-center">
-                <img src="images/gamou.jpg" alt="Gamou" class="img-fluid rounded">
-                <h4>Gamou</h4>
-                <p>Célébration du Mawlid, marquant la naissance du Prophète (PSL), avec des récitations et des prières.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
+    
       <section class="pédagogie" id="pedagogie">
         <h3 class="text-center df fw-bold">Pédagogie</h3>
+        <p class="text-center">Quiconque entrave votre quête de connaissance sera considéré comme un représentant de Satan, le grand rusé .</p>
         <hr>
         <div class="container">
           <img src="images/pédagogie.png" class="img-fluid pt-3" alt="Image pédagogique"> 
@@ -344,10 +365,12 @@
               <div class="col-md-4">
                 <h4 class="fw-bold">Liens Utiles</h4>
                 <ul class="list-unstyled">
-                  <li><a href="#propos" class="text-white text-decoration-none">À propos</a></li>
+                  <li><a href="#propos" class="text-white text-decoration-none">Daara dji</a></li>
                   <li><a href="#programmes" class="text-white text-decoration-none">Programmes</a></li>
+                  <li><a href="#commission" class="text-white text-decoration-none">Commission</a></li>
+                  <li><a href="#pedagogie" class="text-white text-decoration-none">Pédagogie</a></li>
+                  <li><a href="#galerie" class="text-white text-decoration-none">Galerie</a></li>
                   <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
-                  <li><a href="#evenement" class="text-white text-decoration-none">Événements</a></li>
                 </ul>
               </div>
               <!-- Réseaux sociaux -->
@@ -356,7 +379,7 @@
                 <div>
                   <a href="https://www.facebook.com/share/1Yce9371Dq/?mibextid=wwXIfr" target="_blank" class="text-white me-2"><i class="fab fa-facebook fa-lg"></i></a>
                   <a href="https://www.instagram.com/daarajazboulkhoulob?igsh=YTZldXJzazB5Z2Qx&utm_source=qr" target="_blank" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
-                  <a href="https://tiktok.com" target="_blank" class="text-white me-3">
+                  <a href="https://www.tiktok.com/@daara_jazboul_xoulob?_t=ZM-8uxVibil67K&_r=1" target="_blank" class="text-white me-3">
                     <i class="fab fa-tiktok fa-lg"></i>
                   </a>
                   <a href="https://t.me/djkhtp" target="_blank" class="text-white">

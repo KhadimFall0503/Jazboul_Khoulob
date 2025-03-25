@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif; /* Police sobre et lisible */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   .logo {
@@ -140,7 +141,33 @@ body {
     font-size: 16px; /* Taille du paragraphe */
     margin: 10px 0 0; /* Espace entre le titre et le paragraphe */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre pour le paragraphe */
-  }  
+  } 
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Distance par rapport au bas de la fenêtre */
+    right: 20px; /* Distance par rapport au côté droit */
+    z-index: 1000; /* Assure que l'icône reste au-dessus des autres éléments */
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.whatsapp-icon i {
+    font-size: 24px; /* Taille de l'icône */
+}
+
+.whatsapp-icon:hover {
+    background-color: #1ebe57; /* Couleur au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Effet d'ombre au survol */
+}
+ 
   .propos {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Dégradé doux pour le fond */
     padding: 60px 20px; /* Espacement généreux pour une présentation agréable */
@@ -250,6 +277,7 @@ body {
     color: #333;
     line-height: 1.6;
   }
+  
   .equipe {
     background-color: #f8f9fa; /* Fond doux */
     padding: 50px 20px;
