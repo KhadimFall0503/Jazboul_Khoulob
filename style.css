@@ -164,6 +164,10 @@ body {
     margin: 10px 0 0; /* Espace entre le titre et le paragraphe */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre pour le paragraphe */
   } 
+  [data-aos="fade-right"] {
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
   .whatsapp-icon {
     position: fixed;
     bottom: 20px; /* Distance par rapport au bas de la fenêtre */
