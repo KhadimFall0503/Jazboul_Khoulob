@@ -151,10 +151,11 @@ body {
   }
   
   .texte-sur-image h1 {
-    font-size: 1.8rem; /* Taille du titre */
+    font-size: 2.3rem; /* Taille du titre */
     font-weight: 800;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ajoute une ombre pour une meilleure lisibilité */
+    
   }
   
   .texte-sur-image p {
@@ -194,7 +195,7 @@ body {
   }
   
   .propos h3 {
-    font-size: 40px;
+    font-size: 35px;
     color: #28a745;
     margin-bottom: 30px;
   }
@@ -389,7 +390,7 @@ body {
   }
   
   .pédagogie h3 {
-    font-size: 36px;
+    font-size: 32px;
     color: #28a745; /* Vert harmonieux */
     margin-bottom: 20px;
   }
